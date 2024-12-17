@@ -2,7 +2,7 @@
 
 🎉 Wrapping Up a Week of Learning: Databases! 📚
 
-This week marked an exciting milestone in my training journey as I completed an in-depth focus on databases. From designing efficient schemas to writing SQL queries and exploring database, it's been an incredibly rewarding experience.
+This week marked an exciting milestone in my training journey as I completed an in-depth focus on databases. From designing efficient schemas to writing SQL queries and exploring databases.
 
 💡 Here are some highlights of what I learned:
 
@@ -13,7 +13,7 @@ This week marked an exciting milestone in my training journey as I completed an 
     Big data
     Blockchain
 
-I’ve documented my progress, tasks, and assignments on my [GitHub](insert link), where you can find:
+I’ve documented my progress, tasks, and assignments on my [GitHub](https://github.com/Rola-hub-tech/Database-with-XpandCS), where you can find:
 
     Solutions to the assignments I tackled
     Code snippets showcasing the practical applications
