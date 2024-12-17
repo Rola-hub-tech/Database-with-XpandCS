@@ -1,0 +1,61 @@
+create table Employee(
+SSN int primary key identity(1,1),
+FName varchar(15) not null,
+LName varchar(15) not null,
+Gender char(1) CHECK (Gender IN ('M', 'F')),
+Birthdate date,
+DNum int,
+Supervisor int references Employee(SSN),
+Salary money
+)
+
+Create table Department(
+DNum int primary key identity(10,10),
+DName varchar(20) not null,
+Manager int references Employee(SSN),
+HiringDate date
+)
+
+create table Department_Location(
+DNum int references Department(DNum),
+DLocation varchar(20) default 'Cairo',
+primary key (DNum, DLocation)
+)
+
+create table Project(
+PNum int primary key identity(1, 1),
+PName varchar(20) not null,
+PLocation varchar(20),
+City varchar(20),
+DNum int references Department(DNum)
+)
+
+create table dependent(
+DependentName varchar(20) not null,
+Birthdate date,
+Gender char(1) check (Gender in ('M', 'F')),
+EmployeeID int references Employee(SSN),
+)
+
+create table Employee_Project(
+EmployeeID int references Employee(SSN),
+PNum int references Project(PNum),
+NumOfHours tinyint,
+primary key (EmployeeID, PNum)
+)
+
+alter table Employee
+add test int
+
+alter table Employee
+alter column test tinyint
+
+alter table Employee
+drop column test
+
+alter table Employee
+add foreign key (DNum) references Department(DNum)
+
+drop table Employee_Project
+
+drop database Company
